@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+void wrong()
+{
+    bool error = true;
+
+if(error)
+{
+    throw 10;
+}
+}
+int main()
+{
+    try
+    {
+        wrong();
+    }
+    catch(int w)
+    {
+        cout << "error message " << w << endl;
+    }
+
+    return 0;
+}
