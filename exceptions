@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+void mightgowrong()
+{
+    bool error1 = false;
+    bool error2 = true;
+    if(error1)
+    {
+        throw "something went wrong";
+    }
+    if(error2)
+    {
+        throw string("something else went wrong");
+    }
+}
+void usesmightgowrong()
+{
+    mightgowrong();
+}
+
+int main()
+{
+    try
+    {
+    usesmightgowrong();
+    }
+    catch(int e)
+    {
+        cout << "error code" << e << endl;
+    }
+    catch(char const * e)
+    {
+        cout << "error message" << e << endl;
+    }
+    catch(string &e)
+    {
+        cout << "string error message = " << e << endl;
+    }
+
+    cout << "still running" << endl;
+    return 0;
+}
