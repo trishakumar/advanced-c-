@@ -1,0 +1,30 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    //ofstream outFile;
+
+    fstream outfile;
+
+
+    string outputFileName = "text.txt";
+
+    //outFile.open("text.txt");
+    outFile.open("text.txt");
+    if(outFile.is_open())
+    {
+        outFile << "hello there" << endl;
+        outFile << 123 << endl;
+        outFile.close();
+    }
+    else
+    {
+        cout << "could not create file : " << outputFileName << endl;
+    }
+
+    return 0;
+}
+
+
