@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+class office
+{
+public:
+    void name(string x)
+    {
+        cout << "name = " << x << endl;
+    }
+    void age(int a)
+    {
+        cout << "age = " << a << endl;
+    }
+    void salary(int s)
+    {
+        cout << "salary = " << s << endl;
+    }
+
+};
+
+int main()
+{
+    office officeObject;
+    officeObject.name("tony");
+    officeObject.age(55);
+    officeObject.salary(500);
+    return 0;
+}
