@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+class buckysclass
+{
+public:
+    void coolsaying()
+    {
+        cout << "preaching to the choir" << endl;
+    }
+};
+
+int main()
+{
+    buckysclass buckysobject;
+    buckysobject.coolsaying();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
