@@ -1,0 +1,30 @@
+#include <iostream>
+#include<string>
+using namespace std;
+class buckysclass
+{
+public:
+    buckysclass(string z)
+    {
+        setName(z);
+    }
+    void setName(string x)
+    {
+        name = x;
+    }
+    string getName()
+    {
+        return name;
+    }
+private:
+    string name;
+};
+int main()
+{
+    buckysclass bo("lucky bucky roberts\n");
+    cout << bo.getName();
+
+    buckysclass bo2("sally mcsalad");
+    cout << bo2.getName();
+    return 0;
+}
