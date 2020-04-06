@@ -1,0 +1,49 @@
+
+#include <iostream>
+
+using namespace std;
+class passport
+{
+    public:
+        void name(string x)
+        {
+            cout << "enter your name = " << x << endl;
+        }
+        void surname(string y)
+        {
+            cout << "enter your surname = " << y << endl;
+        }
+        void middle_name(string z)
+        {
+            cout << "enter your middle name = " << z << endl;
+        }
+        void gender(string a)
+        {
+            cout << "enter your gender = " << a << endl;
+        }
+        void age(int b)
+        {
+            cout << "enter your age = " << b << endl;
+        }
+        void adhaar_number(double c)
+        {
+            cout << "enter your adhaar number = " << c << endl;
+        }
+        void phone_number(double d)
+        {
+            cout << "enter your phone number = " << d << endl;
+        }
+};
+int main()
+{
+    passport passportObject;
+    passportObject.name("Trisha");
+    passportObject.surname("Kumar");
+    passportObject.middle_name("Anbu");
+    passportObject.gender("Female");
+    passportObject.age(16);
+    passportObject.adhaar_number(23456);
+    passportObject.phone_number(86603);
+
+    return 0;
+}
