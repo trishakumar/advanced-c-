@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, c, d, total, average;
+    cout << "enter 4 numbers = " << endl;
+    cin >> a >> b >> c >> d;
+    total = a + b + c + d;
+    cout << "total = " << total << endl;
+    average = (a + b + c + d) / 4;
+    cout << "average = " << average << endl;
+    return 0;
+}
