@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float income;
+    cout << "enter your monthly income = ";
+    cin >> income;
+
+    if(income < 0.0)
+        cout << "you are going farther into depth every month" << endl;
+    else if(income >=0.0 && income <1200.0)
+        cout << "you are living below the poverty line" << endl;
+    else if(income >= 1200.0 && income < 2500.0)
+        cout << "you are lving in moderate comfort" << endl;
+    else if (income >= 2500.0)
+        cout << "you are well off" << endl;
+    return 0;
+}
