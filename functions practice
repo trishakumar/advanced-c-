@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x,y;
+    cout << "Enter 2 integers = " << endl;
+    cin >> x >> y;
+    if(x > y && x % y == 0)
+    {
+        cout << y << " is the greatest divisor" << endl;
+    }
+    else
+    {
+        cout << x << " is the greatest divisor" << endl;
+    }
+
+    if(x > 0)
+    {
+        return 0;
+    }
+    else
+    {
+        cout << "negative "<< endl;
+    }
+
+    if(y > 0)
+    {
+        return 0;
+    }
+
+    else
+    {
+        cout << "negative" << endl;
+    }
+
+}
