@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    enum color_type {red, orange, yellow, green, blue, violet};
+    color_type shirt, pants;
+    shirt = orange;    pants = violet;
+    cout << shirt << "  " << pants << endl;
+    return 0;
+}
