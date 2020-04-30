@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, c, x, y, z;
+    cout << "enter the values of first array = " << endl;
+    cin >> a >> b >> c;
+    cout << "enter the values of the second array = " << endl;
+    cin >> x >> y >> z;
+    if(a == x)
+    {
+        cout << "0 ";
+    }
+    if(b == y)
+    {
+        cout << "1 ";
+    }
+    if(c == z)
+    {
+        cout << "2 ";
+    }
+    else
+    {
+        cout << "no more matches" << endl;
+    }
+}
