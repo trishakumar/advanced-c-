@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c, d, x, y, z;
+    cout << "enter the values of the first array = " << endl;
+    cin >> a >> b >> c >> d;
+    cout << "enter the values of the second array = " << endl;
+    cin >> x >> y >> z;
+    cout << "concatenated array = " << a << ", " << b << ", " << c << ", " << d << ", " << x << ", " << y << ", " << z << endl;
+}
