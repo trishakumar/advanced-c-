@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+void largest_number()
+{
+    int x, y, z;
+    cout << "enter three numbers = " << endl;
+    cin >> x >> y >> z;
+    if(x>y && x>z)
+    {
+        cout << x << " is the greatest" <<  endl;
+    }
+    else if(y>z && y>x)
+    {
+        cout << y << " is the greatest" << endl;
+    }
+    else
+    {
+        cout << z << " is the greatest" << endl;
+    }
+}
+int main()
+{
+    largest_number();
+    return 0;
+}
