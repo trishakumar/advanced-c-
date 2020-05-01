@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+void sum_from_to()
+{
+    int first, last, sum;
+    cout << "enter first and last number = " << endl;
+    cin >> first >> last;
+    sum = first + last;
+    cout << "sum_from_to(first, last) = " << sum << endl;
+}
+int main()
+{
+    sum_from_to();
+    return 0;
+}
