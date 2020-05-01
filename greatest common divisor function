@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+void g_c_d()
+{
+    int x,y;
+    cout << "Enter 2 numbers = " << endl;
+    cin >> x >> y;
+    if(x%y == 0)
+    {
+        cout << y << endl;
+    }
+    else if(y%x == 0)
+    {
+        cout << x << endl;
+    }
+    else
+    {
+        cout << "no proper division possible" << endl;
+    }
+}
+int main()
+{
+    g_c_d();
+    return 0;
+}
