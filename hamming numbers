@@ -1,0 +1,56 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+bool chkHhamming (int n) 
+{
+	if (n == 1) return true;
+	if (n%2==0 or n%3==0 or n%5==0) 
+	{
+		for (int i = 2; i*i < n; ++i) 
+		{
+			if (n%i == 0) {
+				if (i%2 != 0 and i%3!=0 and 
+
+i%5!=0) return false;
+			}
+			if (n%(n/i) == 0) {
+				if ((n/i)%2 != 0 and (n/i)%3!=0 
+
+and (n/i)%5!=0) return false;
+			}
+		}
+		return true;		
+	}
+	return false;
+}
+
+int main () 
+{
+	int n,j;
+	cout << "\n\n Find first twenty Hamming numbers: \n";
+	cout << " ---------------------------------------\n";
+	cout << " Input the upper limit of Hamming numbers: ";
+	cin>>n;
+	cout << " The Hamming numbers are: "<<endl;	
+	
+	while (j<=n) 
+	{
+		int count = 0;
+		int i = 1;
+		bool first = true;
+		while (count < n) 
+		{
+			if (chkHhamming(i)) 
+			{
+				if (not first) cout << ",";
+				cout << i;
+				++count;
+				first = false;
+			}
+			++i;
+		}
+		j++;
+	}
+	cout <<endl;
+}
