@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i, n, n1, s1 = 0, j, k, en, sn;
+    long fact;
+    cout << "\n\n Find Strong Numbers within an range of numbers:\n";
+    cout << "----------------------------------------------------\n";
+    cout << " Input starting range of number: ";
+    cin >> sn;
+    cout << " Input ending range of number: ";
+    cin >> en;
+    cout << " The Strong numbers are: ";
+    for (k = sn; k <= en; k++) 
+    {
+        n1 = k;
+        s1 = 0;
+        for (j = k; j > 0; j = j / 10) 
+        {
+            fact = 1;
+            for (i = 1; i <= j % 10; i++) 
+            {
+                fact = fact * i;
+            }
+            s1 = s1 + fact;
+        }
+        if (s1 == n1)
+            cout << n1 << "  ";
+    }
+    cout << endl;
+}
